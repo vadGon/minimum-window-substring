@@ -6,6 +6,10 @@ public class Solution {
         String res = "";
         int resLen = Integer.MAX_VALUE;
 
+        if (t.length() > s.length() || t.equals("")){
+            return "";
+        }
+
         // initial set up two window maps
         Map<Character, Integer> requiredWindow = new HashMap<>();
         Map<Character, Integer> window = new HashMap<>();
